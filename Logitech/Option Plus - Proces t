@@ -22,6 +22,7 @@ Actions - Start a program
 Command - C:\Windows\System32\taskkill.exe
 
 Arguments - /f /im logioptionsplus_agent.exe
+           /f /t /im logioptionsplus_agent.exe    (use /t to kill all dependents)
 
 Thats it, it works I use it.
 
