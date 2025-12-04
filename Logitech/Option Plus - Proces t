@@ -1,0 +1,25 @@
+This message is due to the Logitech software not shutting down the "logioptionsplus_agent.exe" at windows shutdown or reboot.
+
+Use the Windows Task Sheduler to kill the "logioptionsplus_agent.exe" at shutdown or reboot.
+
+Open taskschd.msc
+
+Create new basic task
+
+Make sure "Run with highest privileges" is checked
+
+Tasktrigger - When a specific event is logged
+
+Log - System
+
+Source - User32
+
+Event ID - 1074
+
+Actions - Start a program
+
+Command - C:\Windows\System32\taskkill.exe
+
+Arguments - /f /im logioptionsplus_agent.exe
+
+Thats it, it works I use it.
