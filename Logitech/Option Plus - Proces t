@@ -15,6 +15,7 @@ Log - System
 Source - User32
 
 Event ID - 1074
+           1074 meaning: Windows shut down
 
 Actions - Start a program
 
@@ -23,3 +24,8 @@ Command - C:\Windows\System32\taskkill.exe
 Arguments - /f /im logioptionsplus_agent.exe
 
 Thats it, it works I use it.
+
+
+Chỉnh Setting để bỏ các dâu check:
+X Run task as soon as possible after a scheduled start is missed
+X Stop the task if it runs longer than:
