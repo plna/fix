@@ -21,7 +21,9 @@ Actions - Start a program
 
 Command - C:\Windows\System32\taskkill.exe
 
-Arguments - /f /im logioptionsplus_agent.exe
+Arguments - /im logioptionsplus_agent.exe /f
+            /im logioptionsplus_agent.exe /f /t        (add /t to kill all depandents)
+
 
 Thats it, it works I use it.
 
